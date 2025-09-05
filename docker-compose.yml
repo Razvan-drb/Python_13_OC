@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    container_name: oc-lettings-web
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=${DEBUG:-0}
+      - SECRET_KEY=${SECRET_KEY}
+      - SENTRY_DSN=${SENTRY_DSN}
+    volumes:
+      - .:/app
+      - sqlite_data:/app/sqlite_data
+    command: python manage.py runserver 0.0.0.0:8000
+
+volumes:
+  sqlite_data:

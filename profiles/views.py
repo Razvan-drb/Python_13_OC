@@ -1,7 +1,9 @@
 from django.shortcuts import render
 
 from profiles.models import Profile
+import logging
 
+logger = logging.getLogger(__name__)
 
 # Sed placerat quam in pulvinar commodo. Nullam laoreet consectetur
 # ex, sed consequat libero pulvinar eget. Fusc
@@ -24,10 +26,13 @@ def index(request):
 def profile(request, username):
     """
     View function for displaying the details of a specific user's profile.
-
-    Args:
-        username (str): The username of the Profile to display.
     """
-    profile = Profile.objects.get(user__username=username)
-    context = {'profile': profile}
-    return render(request, 'profiles/profile.html', context)
+    try:
+        profile = Profile.objects.get(user__username=username)
+        context = {'profile': profile}
+        logger.info(f"Profile viewed: {username}")
+        return render(request, 'profiles/profile.html', context)
+
+    except Profile.DoesNotExist:
+        logger.error(f"Profile for username {username} not found!")
+        return render(request, '404.html', status=404)

@@ -1,7 +1,9 @@
 from django.shortcuts import render
 
 from lettings.models import Letting
+import logging
 
+logger = logging.getLogger(__name__)
 
 # Aenean leo magna, vestibulum et tincidunt fermentum, consectetur quis velit.
 # Sed non placerat massa. Integer est
@@ -32,14 +34,19 @@ def index(request):
 # Donec quis nisi ligula. Integer vehicula tincidunt enim, ac lacinia augue pulvinar sit amet.
 def letting(request, letting_id):
     """
-        View function for displaying the details of a specific letting.
-
-        Args:
-            letting_id (int): The primary key of the Letting to display.
+    View function for displaying the details of a specific letting.
     """
-    letting = Letting.objects.get(id=letting_id)
-    context = {
-        'title': letting.title,
-        'address': letting.address,
-    }
-    return render(request, 'lettings/letting.html', context)
+    try:
+        letting = Letting.objects.get(id=letting_id)
+        context = {
+            'title': letting.title,
+            'address': letting.address,
+        }
+        # Log une information utile
+        logger.info(f"Letting detail viewed: {letting.title} (ID: {letting_id})")
+        return render(request, 'lettings/letting.html', context)
+
+    except Letting.DoesNotExist:
+        # Log une erreur critique si le letting n'existe pas
+        logger.error(f"Letting with ID {letting_id} not found!")
+        return render(request, '404.html', status=404)
