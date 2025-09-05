@@ -30,8 +30,6 @@ jobs:
         DEBUG: 1
         SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
       run: |
-        # COLLECT STATIC FILES FIRST - FIX FOR PRODUCTION MODE
-        python manage.py collectstatic --noinput
         
         # RUN TESTS
         python manage.py test --verbosity=2
