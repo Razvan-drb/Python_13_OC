@@ -28,8 +28,14 @@ jobs:
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
         DEBUG: 0
-        SENTRY_DSN: ${{ secrets.SENTRY_DSN }}  # Ajoutez cette ligne
+        SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
       run: |
+        # COLLECT STATIC FILES FIRST - FIX FOR PRODUCTION MODE
+        python manage.py collectstatic --noinput
+        
+        # RUN TESTS
         python manage.py test --verbosity=2
+        
+        # COVERAGE REPORT
         coverage run --source='.' manage.py test
         coverage report -m
