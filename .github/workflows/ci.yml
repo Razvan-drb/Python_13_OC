@@ -27,7 +27,7 @@ jobs:
     - name: Run tests with coverage
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
-        DEBUG: 0
+        DEBUG: 1
         SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
       run: |
         # COLLECT STATIC FILES FIRST - FIX FOR PRODUCTION MODE
