@@ -143,6 +143,3 @@ LOGGING = {
         'level': 'INFO',
     },
 }
-
-# Static files (CSS, JavaScript, Images)
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
