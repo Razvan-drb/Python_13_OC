@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: oc-lettings
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn oc_lettings_site.wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true  # Render génère une SECRET_KEY automatiquement
+      - key: DEBUG
+        value: "0"  # Désactive le mode debug en production
+      - key: SENTRY_DSN
+        fromSecret: true  # Vous devrez quand même l'ajouter manuellement dans l'UI
