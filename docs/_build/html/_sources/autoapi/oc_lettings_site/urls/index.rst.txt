@@ -1,0 +1,35 @@
+oc_lettings_site.urls
+=====================
+
+.. py:module:: oc_lettings_site.urls
+
+.. autoapi-nested-parse::
+
+   URL configuration for oc_lettings_site project.
+   Includes the main routes for the home page, admin, and the lettings/profiles apps.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   oc_lettings_site.urls.urlpatterns
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   oc_lettings_site.urls.trigger_error
+
+
+Module Contents
+---------------
+
+.. py:function:: trigger_error(request)
+
+.. py:data:: urlpatterns
+

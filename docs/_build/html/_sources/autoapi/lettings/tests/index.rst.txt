@@ -1,0 +1,58 @@
+lettings.tests
+==============
+
+.. py:module:: lettings.tests
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   lettings.tests.LettingModelTest
+   lettings.tests.LettingViewTest
+
+
+Module Contents
+---------------
+
+.. py:class:: LettingModelTest(methodName='runTest')
+
+   Bases: :py:obj:`django.test.TestCase`
+
+
+   Test suite for the Letting model.
+
+
+   .. py:method:: test_letting_creation()
+
+      Test that a Letting can be created.
+
+
+
+.. py:class:: LettingViewTest(methodName='runTest')
+
+   Bases: :py:obj:`django.test.TestCase`
+
+
+   Test suite for Letting views.
+
+
+   .. py:method:: setUp()
+
+      Set up data for the tests.
+
+
+
+   .. py:method:: test_lettings_index_view()
+
+      Test that the lettings index view returns a 200 response.
+
+
+
+   .. py:method:: test_letting_detail_view()
+
+      Test that the letting detail view returns a 200 response.
+
+
+

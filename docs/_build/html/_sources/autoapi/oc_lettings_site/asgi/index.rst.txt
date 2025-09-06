@@ -1,0 +1,24 @@
+oc_lettings_site.asgi
+=====================
+
+.. py:module:: oc_lettings_site.asgi
+
+.. autoapi-nested-parse::
+
+   WSGI config for oc_lettings_site project.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   oc_lettings_site.asgi.application
+
+
+Module Contents
+---------------
+
+.. py:data:: application
+

@@ -1,0 +1,20 @@
+profiles
+========
+
+.. py:module:: profiles
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/profiles/admin/index
+   /autoapi/profiles/apps/index
+   /autoapi/profiles/models/index
+   /autoapi/profiles/tests/index
+   /autoapi/profiles/urls/index
+   /autoapi/profiles/views/index
+
+

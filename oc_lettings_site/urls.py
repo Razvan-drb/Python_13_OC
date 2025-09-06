@@ -12,6 +12,7 @@ def trigger_error(request):
     division_by_zero = 1 / 0
     return HttpResponse("Hello")
 
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('lettings/', include('lettings.urls')),

@@ -1,0 +1,102 @@
+oc_lettings_site.settings
+=========================
+
+.. py:module:: oc_lettings_site.settings
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   oc_lettings_site.settings.BASE_DIR
+   oc_lettings_site.settings.SECRET_KEY
+   oc_lettings_site.settings.DEBUG
+   oc_lettings_site.settings.ALLOWED_HOSTS
+   oc_lettings_site.settings.INSTALLED_APPS
+   oc_lettings_site.settings.MIDDLEWARE
+   oc_lettings_site.settings.ROOT_URLCONF
+   oc_lettings_site.settings.TEMPLATES
+   oc_lettings_site.settings.WSGI_APPLICATION
+   oc_lettings_site.settings.DATABASES
+   oc_lettings_site.settings.AUTH_PASSWORD_VALIDATORS
+   oc_lettings_site.settings.LANGUAGE_CODE
+   oc_lettings_site.settings.TIME_ZONE
+   oc_lettings_site.settings.USE_I18N
+   oc_lettings_site.settings.USE_L10N
+   oc_lettings_site.settings.USE_TZ
+   oc_lettings_site.settings.STATIC_ROOT
+   oc_lettings_site.settings.STATIC_URL
+   oc_lettings_site.settings.STATICFILES_DIRS
+   oc_lettings_site.settings.LOGGING
+
+
+Module Contents
+---------------
+
+.. py:data:: BASE_DIR
+
+.. py:data:: SECRET_KEY
+   :value: 'fp$9^593hsriajg$_%=5trot9g!1qa@ew(o-1#@=&4%=hp46(s'
+
+
+.. py:data:: DEBUG
+   :value: True
+
+
+.. py:data:: ALLOWED_HOSTS
+   :value: ['python-13-oc.onrender.com', 'localhost', '127.0.0.1']
+
+
+.. py:data:: INSTALLED_APPS
+   :value: ['oc_lettings_site.apps.OCLettingsSiteConfig', 'django.contrib.admin', 'django.contrib.auth',...
+
+
+.. py:data:: MIDDLEWARE
+   :value: ['django.middleware.security.SecurityMiddleware',...
+
+
+.. py:data:: ROOT_URLCONF
+   :value: 'oc_lettings_site.urls'
+
+
+.. py:data:: TEMPLATES
+
+.. py:data:: WSGI_APPLICATION
+   :value: 'oc_lettings_site.wsgi.application'
+
+
+.. py:data:: DATABASES
+
+.. py:data:: AUTH_PASSWORD_VALIDATORS
+
+.. py:data:: LANGUAGE_CODE
+   :value: 'en-us'
+
+
+.. py:data:: TIME_ZONE
+   :value: 'UTC'
+
+
+.. py:data:: USE_I18N
+   :value: True
+
+
+.. py:data:: USE_L10N
+   :value: True
+
+
+.. py:data:: USE_TZ
+   :value: True
+
+
+.. py:data:: STATIC_ROOT
+
+.. py:data:: STATIC_URL
+   :value: '/static/'
+
+
+.. py:data:: STATICFILES_DIRS
+
+.. py:data:: LOGGING
+

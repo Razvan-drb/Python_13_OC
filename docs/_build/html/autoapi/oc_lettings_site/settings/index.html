@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>oc_lettings_site.settings &#8212; Orange County Lettings 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+    <script src="../../../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="oc_lettings_site.tests" href="../tests/index.html" />
+    <link rel="prev" title="oc_lettings_site.models" href="../models/index.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-oc_lettings_site.settings">
+<span id="oc-lettings-site-settings"></span><h1>oc_lettings_site.settings<a class="headerlink" href="#module-oc_lettings_site.settings" title="Link to this heading">¶</a></h1>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#oc_lettings_site.settings.BASE_DIR" title="oc_lettings_site.settings.BASE_DIR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BASE_DIR</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#oc_lettings_site.settings.SECRET_KEY" title="oc_lettings_site.settings.SECRET_KEY"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SECRET_KEY</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#oc_lettings_site.settings.DEBUG" title="oc_lettings_site.settings.DEBUG"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DEBUG</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#oc_lettings_site.settings.ALLOWED_HOSTS" title="oc_lettings_site.settings.ALLOWED_HOSTS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ALLOWED_HOSTS</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#oc_lettings_site.settings.INSTALLED_APPS" title="oc_lettings_site.settings.INSTALLED_APPS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">INSTALLED_APPS</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#oc_lettings_site.settings.MIDDLEWARE" title="oc_lettings_site.settings.MIDDLEWARE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MIDDLEWARE</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#oc_lettings_site.settings.ROOT_URLCONF" title="oc_lettings_site.settings.ROOT_URLCONF"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ROOT_URLCONF</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#oc_lettings_site.settings.TEMPLATES" title="oc_lettings_site.settings.TEMPLATES"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TEMPLATES</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#oc_lettings_site.settings.WSGI_APPLICATION" title="oc_lettings_site.settings.WSGI_APPLICATION"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WSGI_APPLICATION</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#oc_lettings_site.settings.DATABASES" title="oc_lettings_site.settings.DATABASES"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DATABASES</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#oc_lettings_site.settings.AUTH_PASSWORD_VALIDATORS" title="oc_lettings_site.settings.AUTH_PASSWORD_VALIDATORS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AUTH_PASSWORD_VALIDATORS</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#oc_lettings_site.settings.LANGUAGE_CODE" title="oc_lettings_site.settings.LANGUAGE_CODE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LANGUAGE_CODE</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#oc_lettings_site.settings.TIME_ZONE" title="oc_lettings_site.settings.TIME_ZONE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TIME_ZONE</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#oc_lettings_site.settings.USE_I18N" title="oc_lettings_site.settings.USE_I18N"><code class="xref py py-obj docutils literal notranslate"><span class="pre">USE_I18N</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#oc_lettings_site.settings.USE_L10N" title="oc_lettings_site.settings.USE_L10N"><code class="xref py py-obj docutils literal notranslate"><span class="pre">USE_L10N</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#oc_lettings_site.settings.USE_TZ" title="oc_lettings_site.settings.USE_TZ"><code class="xref py py-obj docutils literal notranslate"><span class="pre">USE_TZ</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#oc_lettings_site.settings.STATIC_ROOT" title="oc_lettings_site.settings.STATIC_ROOT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">STATIC_ROOT</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#oc_lettings_site.settings.STATIC_URL" title="oc_lettings_site.settings.STATIC_URL"><code class="xref py py-obj docutils literal notranslate"><span class="pre">STATIC_URL</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#oc_lettings_site.settings.STATICFILES_DIRS" title="oc_lettings_site.settings.STATICFILES_DIRS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">STATICFILES_DIRS</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#oc_lettings_site.settings.LOGGING" title="oc_lettings_site.settings.LOGGING"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LOGGING</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.BASE_DIR">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">BASE_DIR</span></span><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#BASE_DIR"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.BASE_DIR" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.SECRET_KEY">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">SECRET_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'fp$9^593hsriajg$_%=5trot9g!1qa&#64;ew(o-1#&#64;=&amp;4%=hp46(s'</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#SECRET_KEY"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.SECRET_KEY" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.DEBUG">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">DEBUG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#DEBUG"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.DEBUG" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.ALLOWED_HOSTS">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">ALLOWED_HOSTS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['python-13-oc.onrender.com',</span> <span class="pre">'localhost',</span> <span class="pre">'127.0.0.1']</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#ALLOWED_HOSTS"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.ALLOWED_HOSTS" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.INSTALLED_APPS">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">INSTALLED_APPS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['oc_lettings_site.apps.OCLettingsSiteConfig',</span> <span class="pre">'django.contrib.admin',</span> <span class="pre">'django.contrib.auth',...</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#INSTALLED_APPS"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.INSTALLED_APPS" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.MIDDLEWARE">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">MIDDLEWARE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['django.middleware.security.SecurityMiddleware',...</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#MIDDLEWARE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.MIDDLEWARE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.ROOT_URLCONF">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">ROOT_URLCONF</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'oc_lettings_site.urls'</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#ROOT_URLCONF"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.ROOT_URLCONF" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.TEMPLATES">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">TEMPLATES</span></span><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#TEMPLATES"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.TEMPLATES" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.WSGI_APPLICATION">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">WSGI_APPLICATION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'oc_lettings_site.wsgi.application'</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#WSGI_APPLICATION"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.WSGI_APPLICATION" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.DATABASES">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">DATABASES</span></span><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#DATABASES"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.DATABASES" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.AUTH_PASSWORD_VALIDATORS">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">AUTH_PASSWORD_VALIDATORS</span></span><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#AUTH_PASSWORD_VALIDATORS"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.AUTH_PASSWORD_VALIDATORS" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.LANGUAGE_CODE">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">LANGUAGE_CODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'en-us'</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#LANGUAGE_CODE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.LANGUAGE_CODE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.TIME_ZONE">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">TIME_ZONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'UTC'</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#TIME_ZONE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.TIME_ZONE" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.USE_I18N">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">USE_I18N</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#USE_I18N"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.USE_I18N" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.USE_L10N">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">USE_L10N</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#USE_L10N"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.USE_L10N" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.USE_TZ">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">USE_TZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#USE_TZ"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.USE_TZ" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.STATIC_ROOT">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">STATIC_ROOT</span></span><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#STATIC_ROOT"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.STATIC_ROOT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.STATIC_URL">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">STATIC_URL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'/static/'</span></em><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#STATIC_URL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.STATIC_URL" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.STATICFILES_DIRS">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">STATICFILES_DIRS</span></span><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#STATICFILES_DIRS"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.STATICFILES_DIRS" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="oc_lettings_site.settings.LOGGING">
+<span class="sig-prename descclassname"><span class="pre">oc_lettings_site.settings.</span></span><span class="sig-name descname"><span class="pre">LOGGING</span></span><a class="reference internal" href="../../../_modules/oc_lettings_site/settings.html#LOGGING"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#oc_lettings_site.settings.LOGGING" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">Orange County Lettings</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../lettings/index.html">lettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../profiles/index.html">profiles</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">oc_lettings_site</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">API Reference</a><ul>
+  <li><a href="../index.html">oc_lettings_site</a><ul>
+      <li>Previous: <a href="../models/index.html" title="previous chapter">oc_lettings_site.models</a></li>
+      <li>Next: <a href="../tests/index.html" title="next chapter">oc_lettings_site.tests</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Razvan DARABAN.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../_sources/autoapi/oc_lettings_site/settings/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

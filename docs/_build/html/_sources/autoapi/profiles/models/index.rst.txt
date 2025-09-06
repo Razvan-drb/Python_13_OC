@@ -1,0 +1,28 @@
+profiles.models
+===============
+
+.. py:module:: profiles.models
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   profiles.models.Profile
+
+
+Module Contents
+---------------
+
+.. py:class:: Profile(*args, **kwargs)
+
+   Bases: :py:obj:`django.db.models.Model`
+
+
+   .. py:attribute:: user
+
+
+   .. py:attribute:: favorite_city
+
+

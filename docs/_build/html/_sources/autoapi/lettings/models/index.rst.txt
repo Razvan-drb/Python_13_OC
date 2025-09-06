@@ -1,0 +1,66 @@
+lettings.models
+===============
+
+.. py:module:: lettings.models
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   lettings.models.Address
+   lettings.models.Letting
+
+
+Module Contents
+---------------
+
+.. py:class:: Address(*args, **kwargs)
+
+   Bases: :py:obj:`django.db.models.Model`
+
+
+   Represents a physical address.
+
+
+   .. py:attribute:: number
+
+
+   .. py:attribute:: street
+
+
+   .. py:attribute:: city
+
+
+   .. py:attribute:: state
+
+
+   .. py:attribute:: zip_code
+
+
+   .. py:attribute:: country_iso_code
+
+
+   .. py:class:: Meta
+
+      .. py:attribute:: verbose_name_plural
+         :value: 'Addresses'
+
+
+
+
+.. py:class:: Letting(*args, **kwargs)
+
+   Bases: :py:obj:`django.db.models.Model`
+
+
+   Extends the User model with additional favorite city information.
+
+
+   .. py:attribute:: title
+
+
+   .. py:attribute:: address
+
+

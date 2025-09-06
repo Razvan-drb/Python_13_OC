@@ -1,0 +1,19 @@
+oc_lettings_site.views
+======================
+
+.. py:module:: oc_lettings_site.views
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   oc_lettings_site.views.index
+
+
+Module Contents
+---------------
+
+.. py:function:: index(request)
+

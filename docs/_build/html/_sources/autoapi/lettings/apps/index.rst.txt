@@ -1,0 +1,30 @@
+lettings.apps
+=============
+
+.. py:module:: lettings.apps
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   lettings.apps.LettingsConfig
+
+
+Module Contents
+---------------
+
+.. py:class:: LettingsConfig(app_name, app_module)
+
+   Bases: :py:obj:`django.apps.AppConfig`
+
+
+   Class representing a Django application and its configuration.
+
+
+   .. py:attribute:: name
+      :value: 'lettings'
+
+
+

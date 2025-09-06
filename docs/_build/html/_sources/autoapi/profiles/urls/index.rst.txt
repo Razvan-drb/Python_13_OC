@@ -1,0 +1,29 @@
+profiles.urls
+=============
+
+.. py:module:: profiles.urls
+
+.. autoapi-nested-parse::
+
+   URL routes for the profiles application.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   profiles.urls.app_name
+   profiles.urls.urlpatterns
+
+
+Module Contents
+---------------
+
+.. py:data:: app_name
+   :value: 'profiles'
+
+
+.. py:data:: urlpatterns
+

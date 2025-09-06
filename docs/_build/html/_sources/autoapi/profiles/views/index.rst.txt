@@ -1,0 +1,38 @@
+profiles.views
+==============
+
+.. py:module:: profiles.views
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   profiles.views.logger
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   profiles.views.index
+   profiles.views.profile
+
+
+Module Contents
+---------------
+
+.. py:data:: logger
+
+.. py:function:: index(request)
+
+   View function for displaying the list of all user profiles.
+
+
+.. py:function:: profile(request, username)
+
+   View function for displaying the details of a specific user's profile.
+
+

@@ -1,0 +1,38 @@
+lettings.views
+==============
+
+.. py:module:: lettings.views
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   lettings.views.logger
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   lettings.views.index
+   lettings.views.letting
+
+
+Module Contents
+---------------
+
+.. py:data:: logger
+
+.. py:function:: index(request)
+
+   View function for displaying the list of all lettings.
+
+
+.. py:function:: letting(request, letting_id)
+
+   View function for displaying the details of a specific letting.
+
+

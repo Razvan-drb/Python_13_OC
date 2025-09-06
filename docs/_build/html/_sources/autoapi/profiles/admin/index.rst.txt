@@ -1,0 +1,6 @@
+profiles.admin
+==============
+
+.. py:module:: profiles.admin
+
+

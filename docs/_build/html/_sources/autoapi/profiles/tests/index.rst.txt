@@ -1,0 +1,58 @@
+profiles.tests
+==============
+
+.. py:module:: profiles.tests
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   profiles.tests.ProfileModelTest
+   profiles.tests.ProfileViewTest
+
+
+Module Contents
+---------------
+
+.. py:class:: ProfileModelTest(methodName='runTest')
+
+   Bases: :py:obj:`django.test.TestCase`
+
+
+   Test suite for the Profile model.
+
+
+   .. py:method:: test_profile_creation()
+
+      Test that a Profile can be created.
+
+
+
+.. py:class:: ProfileViewTest(methodName='runTest')
+
+   Bases: :py:obj:`django.test.TestCase`
+
+
+   Test suite for Profile views.
+
+
+   .. py:method:: setUp()
+
+      Set up data for the tests.
+
+
+
+   .. py:method:: test_profiles_index_view()
+
+      Test that the profiles index view returns a 200 response.
+
+
+
+   .. py:method:: test_profile_detail_view()
+
+      Test that the profile detail view returns a 200 response.
+
+
+

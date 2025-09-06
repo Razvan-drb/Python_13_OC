@@ -1,0 +1,19 @@
+oc_lettings_site.tests
+======================
+
+.. py:module:: oc_lettings_site.tests
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   oc_lettings_site.tests.test_dummy
+
+
+Module Contents
+---------------
+
+.. py:function:: test_dummy()
+

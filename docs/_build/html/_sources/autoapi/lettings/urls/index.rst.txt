@@ -1,0 +1,29 @@
+lettings.urls
+=============
+
+.. py:module:: lettings.urls
+
+.. autoapi-nested-parse::
+
+   URL routes for the lettings application.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   lettings.urls.app_name
+   lettings.urls.urlpatterns
+
+
+Module Contents
+---------------
+
+.. py:data:: app_name
+   :value: 'lettings'
+
+
+.. py:data:: urlpatterns
+
