@@ -20,6 +20,20 @@ Application de location de biens immobiliers.
 
 L'application est déployée sur Render : https://python-13-oc.onrender.com/
 
+Cette application est déployée automatiquement grâce à un pipeline CI/CD. Pour les instructions détaillées de déploiement, les procédures et les guides de gestion, veuillez consulter la [Documentation de Déploiement](https://your-render-url.onrender.com/deployment.html) dans notre documentation complète.
+
+### Fonctionnalités Clés :
+- **CI/CD Automatisé** avec GitHub Actions
+- **Containerisation Docker** avec intégration Docker Hub
+- **Déploiement Cloud** sur la plateforme Render
+- **Tests automatiques** et contrôles de qualité
+- **Déploiements sans temps d'arrêt**
+
+### Liens Rapides :
+- [Pipeline CI/CD](https://github.com/Razvan-drb/Python_13_OC/actions)
+- [Dépôt Docker Hub](https://hub.docker.com/repository/docker/spartacus33/oc-lettings-app/general)
+
+
 ## 📚 Documentation
 
 La documentation technique est disponible sur ReadTheDocs : https://python-13-oc-lettings.readthedocs.io/en/latest/
