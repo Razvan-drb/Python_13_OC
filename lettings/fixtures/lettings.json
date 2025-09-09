@@ -1,0 +1,122 @@
+[
+{
+  "model": "lettings.address",
+  "pk": 7,
+  "fields": {
+    "number": 7217,
+    "street": "Bedford Street",
+    "city": "Brunswick",
+    "state": "GA",
+    "zip_code": 31525,
+    "country_iso_code": "USA"
+  }
+},
+{
+  "model": "lettings.address",
+  "pk": 8,
+  "fields": {
+    "number": 4,
+    "street": "Military Street",
+    "city": "Willoughby",
+    "state": "OH",
+    "zip_code": 44094,
+    "country_iso_code": "USA"
+  }
+},
+{
+  "model": "lettings.address",
+  "pk": 9,
+  "fields": {
+    "number": 34057,
+    "street": "Glendale Street",
+    "city": "Fremont",
+    "state": "CA",
+    "zip_code": 94536,
+    "country_iso_code": "USA"
+  }
+},
+{
+  "model": "lettings.address",
+  "pk": 10,
+  "fields": {
+    "number": 7930,
+    "street": "Marsh Street",
+    "city": "Westmont",
+    "state": "IL",
+    "zip_code": 60559,
+    "country_iso_code": "USA"
+  }
+},
+{
+  "model": "lettings.address",
+  "pk": 11,
+  "fields": {
+    "number": 83,
+    "street": "West Street",
+    "city": "Fitchburg",
+    "state": "MA",
+    "zip_code": 1420,
+    "country_iso_code": "USA"
+  }
+},
+{
+  "model": "lettings.address",
+  "pk": 12,
+  "fields": {
+    "number": 115,
+    "street": "Cedar Street",
+    "city": "Longview",
+    "state": "TX",
+    "zip_code": 75604,
+    "country_iso_code": "USA"
+  }
+},
+{
+  "model": "lettings.letting",
+  "pk": 7,
+  "fields": {
+    "title": "Joshua Tree Green Haus /w Hot Tub",
+    "address": 7
+  }
+},
+{
+  "model": "lettings.letting",
+  "pk": 8,
+  "fields": {
+    "title": "Oceanview Retreat",
+    "address": 8
+  }
+},
+{
+  "model": "lettings.letting",
+  "pk": 9,
+  "fields": {
+    "title": "'Silo Studio' Cottage",
+    "address": 9
+  }
+},
+{
+  "model": "lettings.letting",
+  "pk": 10,
+  "fields": {
+    "title": "Pirates of the Caribbean Getaway",
+    "address": 10
+  }
+},
+{
+  "model": "lettings.letting",
+  "pk": 11,
+  "fields": {
+    "title": "The Mushroom Dome Retreat & LAND of Paradise Suite",
+    "address": 11
+  }
+},
+{
+  "model": "lettings.letting",
+  "pk": 12,
+  "fields": {
+    "title": "Underground Hygge",
+    "address": 12
+  }
+}
+]

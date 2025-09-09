@@ -1,0 +1,34 @@
+[
+{
+  "model": "profiles.profile",
+  "pk": 5,
+  "fields": {
+    "user": 10,
+    "favorite_city": "Chicago"
+  }
+},
+{
+  "model": "profiles.profile",
+  "pk": 6,
+  "fields": {
+    "user": 11,
+    "favorite_city": "New York"
+  }
+},
+{
+  "model": "profiles.profile",
+  "pk": 7,
+  "fields": {
+    "user": 12,
+    "favorite_city": "Miami"
+  }
+},
+{
+  "model": "profiles.profile",
+  "pk": 8,
+  "fields": {
+    "user": 13,
+    "favorite_city": "Las Vegas"
+  }
+}
+]
