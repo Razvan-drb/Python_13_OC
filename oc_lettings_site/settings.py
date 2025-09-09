@@ -1,3 +1,10 @@
+"""
+Django settings for OC Lettings Site project.
+
+This module contains all the configuration settings for the Django project,
+including database configuration, installed apps, middleware, and other
+Django-specific settings for the OC Lettings application.
+"""
 import os
 from pathlib import Path
 
@@ -34,6 +41,8 @@ ALLOWED_HOSTS = [
     'python-13-oc.onrender.com',
     'localhost',
     '127.0.0.1',
+    '.onrender.com',
+
 ]
 
 
