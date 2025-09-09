@@ -14,6 +14,12 @@ class ProfileModelTest(TestCase):
         self.assertEqual(profile.user.username, "testuser")
         self.assertEqual(profile.favorite_city, "Test City")
 
+    def test_profile_str_method(self):
+        """Test the Profile model's __str__ method."""
+        user = User.objects.create_user(username="testuser", password="testpass")
+        profile = Profile.objects.create(user=user, favorite_city="Test City")
+        self.assertEqual(str(profile), "testuser")
+
 
 class ProfileViewTest(TestCase):
     """Test suite for Profile views."""
@@ -34,3 +40,8 @@ class ProfileViewTest(TestCase):
         response = self.client.get(reverse('profiles:profile', args=[self.user.username]))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "testuser")
+
+    def test_profile_detail_view_not_found(self):
+        """Test that the profile detail view returns a 404 for non-existent profile."""
+        response = self.client.get(reverse('profiles:profile', args=['nonexistent']))
+        self.assertEqual(response.status_code, 404)

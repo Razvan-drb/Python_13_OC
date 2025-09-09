@@ -6,7 +6,8 @@ WORKDIR /app
 
 # Définit les variables d'environnement
 ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHON UNBUFFERED 1
+ENV PYTHONUNBUFFERED 1
+ENV DEBUG 0
 
 # Installe les dépendances système nécessaires
 RUN apt-get update && apt-get install -y \
@@ -16,12 +17,16 @@ RUN apt-get update && apt-get install -y \
 # Copie et installe les dépendances Python
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install gunicorn
 
 # Copie le projet dans le conteneur
 COPY . .
 
+# Collect static files
+RUN python manage.py collectstatic --noinput
+
 # Expose le port 8000
 EXPOSE 8000
 
-# Commande pour lancer l'application
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Commande pour lancer l'application avec Gunicorn
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "oc_lettings_site.wsgi:application"]
