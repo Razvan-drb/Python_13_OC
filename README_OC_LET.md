@@ -22,6 +22,8 @@ L'application est déployée sur Render : https://python-13-oc.onrender.com/
 
 Cette application est déployée automatiquement grâce à un pipeline CI/CD. Pour les instructions détaillées de déploiement, les procédures et les guides de gestion, veuillez consulter la [Documentation de Déploiement](https://your-render-url.onrender.com/deployment.html) dans notre documentation complète.
 
+Copier le .env_dist dans un fichier ".env" et remplir les variables d'environment
+
 ### Fonctionnalités Clés :
 - **CI/CD Automatisé** avec GitHub Actions
 - **Containerisation Docker** avec intégration Docker Hub
